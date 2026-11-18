@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMW Luxury Cars Collection | Flagship Sedans &amp; Gran Coupes</title>
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+
+  <!-- Centered Main Wrapper -->
+  <div id="wrapper">
+
+    <!-- BMW Luxury Gold Accent Line -->
+    <div class="luxury-gold-bar"></div>
+
+    <!-- Header Section with Title, Tagline, Brand Logo & Gradient -->
+    <header>
+      <div class="header-top">
+        <div class="header-branding">
+          <div class="header-logo-badge" title="BMW Luxury Class"
+            style="border-color: #d4af37; box-shadow: 0 0 20px rgba(212,175,55,0.35);">
+            <img src="/images/bmw-logo.jpg" alt="BMW Roundel Logo">
+          </div>
+          <div class="header-text">
+            <h1>BMW &bull; <span class="gold-letter">LUXURY CARS</span> <span class="sub-title"
+                style="color: #f3e5ab;">COLLECTION</span></h1>
+            <p class="tagline">The Pinnacle of Craftsmanship, Serenity &amp; Technological Mastery</p>
+          </div>
+        </div>
+        <!-- Pure CSS Mobile Menu Toggle Label -->
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+    </header>
+
+    <!-- Pure CSS Checkbox for Mobile Navigation (Zero JS) -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+
+    <!-- Horizontal Navigation Menu -->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="/pages/luxury.html" class="active active-luxury"> Luxury Cars</a></li>
+        <li><a href="/pages/performance.html"> Performance Cars</a></li>
+
+      </ul>
+    </nav>
+
+    <!-- Main Content Area: Content Page Layout (Left Sidebar + Right Section) -->
+    <main class="content-area left-sidebar-layout clearfix">
+
+      <!-- Sidebar: Left Column (Thumbnail Image Links & Quick Navigation) -->
+      <aside class="sidebar">
+        <h3 class="sidebar-title gold">Luxury Highlights</h3>
+
+        <!-- List with Image Links (as required by specifications) -->
+        <ul class="image-link-list">
+          <li>
+            <a href="#lux-carousel" class="thumb-card">
+              <img src="/images/bmw-luxury-slide1.jpg" alt="BMW 7 Series Fleet" class="thumb-photo">
+              <div class="thumb-info">
+                <strong>BMW 7 Series Sedan</strong>
+                <span>Flagship Executive Limousine</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#lux-specs" class="thumb-card">
+              <img src="/images/bmw-luxury-slide2.jpg" alt="BMW 8 Series Gran Coupe" class="thumb-photo">
+              <div class="thumb-info">
+                <strong>8 Series Gran Coupe</strong>
+                <span>Sculpted Luxury Sports Stance</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#lux-lounge" class="thumb-card">
+              <img src="/images/bmw-luxury-slide3.jpg" alt="BMW Executive Lounge Cockpit" class="thumb-photo">
+              <div class="thumb-info">
+                <strong>Executive Lounge</strong>
+                <span>31.3" 8K Theater Screen</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/pages/performance.html" class="thumb-card">
+              <img src="/images/bmw-luxury-slide4.jpg" alt="BMW M4 Competition" class="thumb-photo">
+              <div class="thumb-info">
+                <strong>M Performance Cars</strong>
+                <span>503 HP Track Power &rarr;</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Navigation Links including Return to Home Link -->
+        <h3 class="sidebar-title gold">Collection Links</h3>
+        <ul class="sidebar-nav-links">
+          <li><a href="../index.html">&larr; Return to BMW Home</a></li>
+          <li><a href="/pages/performance.html">Switch to M Performance Cars &rarr;</a></li>
+          <li><a href="#lux-carousel">Luxury Photo Carousel</a></li>
+          <li><a href="#lux-specs">Flagship Technical Specs</a></li>
+          <li><a href="#lux-audio">&#127911; Luxury Acoustic Sound</a></li>
+          <li><a href="#lux-pdf">&#128196; View &amp; Download PDF Brochure</a></li>
+        </ul>
+
+        <!-- Sidebar Resource Box -->
+        <div class="sidebar-box">
+          <h4>Executive Lounge Amenities</h4>
+          <p><strong>Acoustic Glazing:</strong> Dual-pane laminated glass insulating all exterior road frequencies.</p>
+          <p><strong>Sky Lounge LED Roof:</strong> Over 15,000 etched light points coordinated with ambient mood
+            lighting.</p>
+          <p><strong>Bowers &amp; Wilkins 4D:</strong> 36 speakers &bull; 1,965 Watts &bull; Headrest tactile exciters.
+          </p>
+        </div>
+      </aside>
+
+      <!-- Main Section: Right Column (Carousel, 2-Column Article, Specs Table, Audio & PDF) -->
+      <section class="main-section">
+        <span class="model-badge luxury-badge">Executive Fleet</span>
+        <h2 class="page-title">BMW Luxury Class: <span class="gold-highlight">The Zenith of Refinement</span></h2>
+
+        <p class="lead-text">
+          The BMW Luxury Class redefines executive mobility. Combining progressive electric and TwinPower Turbo V8
+          drivetrains with artisan-level interior craftsmanship, the flagship <strong>BMW 7 Series</strong> and
+          <strong>BMW 8 Series Gran Coupe</strong> create an extraordinary mobile sanctuary.
+        </p>
+
+        <!-- =================================================================
+             BMW LUXURY CLASS PURE CSS CAROUSEL (ZERO JAVASCRIPT)
+             4 High-Resolution Real Luxury Photos with Radio Buttons, Arrows & Bullets
+             ================================================================= -->
+        <div class="css-carousel-wrapper" id="lux-carousel">
+          <!-- 4 Radio Buttons controlling 4 Luxury Slides -->
+          <input type="radio" name="lux-slide" id="lux-slide1" checked>
+          <input type="radio" name="lux-slide" id="lux-slide2">
+          <input type="radio" name="lux-slide" id="lux-slide3">
+          <input type="radio" name="lux-slide" id="lux-slide4">
+
+          <!-- Carousel Viewport -->
+          <div class="carousel-viewport">
+
+            <!-- Slide 1: BMW 7 Series Flagship Sedan -->
+            <div class="carousel-item slide-1">
+              <img src="/images/bmw-luxury-slide1.jpg" alt="BMW 7 Series Luxury Flagship">
+              <div class="carousel-overlay">
+                <span class="badge gold-badge">Flagship Luxury</span>
+                <h3>BMW 7 Series &ndash; Iconic Road Presence</h3>
+                <p>Illuminated kidney grille contour and split crystal headlight design by Swarovski.</p>
+              </div>
+              <label for="lux-slide4" class="carousel-arrow gold-hover prev" title="Previous Slide">&#10094;</label>
+              <label for="lux-slide2" class="carousel-arrow gold-hover next" title="Next Slide">&#10095;</label>
+            </div>
+
+            <!-- Slide 2: BMW 8 Series Gran Coupe -->
+            <div class="carousel-item slide-2">
+              <img src="/images/bmw-luxury-slide2.jpg" alt="BMW 8 Series Gran Coupe">
+              <div class="carousel-overlay">
+                <span class="badge gold-badge">Grand Tourer</span>
+                <h3>BMW 8 Series Gran Coupe &ndash; Athletic Elegance</h3>
+                <p>Four-door coupe silhouette with frameless glass windows and twin-turbo performance.</p>
+              </div>
+              <label for="lux-slide1" class="carousel-arrow gold-hover prev" title="Previous Slide">&#10094;</label>
+              <label for="lux-slide3" class="carousel-arrow gold-hover next" title="Next Slide">&#10095;</label>
+            </div>
+
+            <!-- Slide 3: Executive Lounge & Curved Display -->
+            <div class="carousel-item slide-3">
+              <img src="/images/bmw-luxury-slide3.jpg" alt="Executive Lounge Cockpit & Curved Display">
+              <div class="carousel-overlay">
+                <span class="badge gold-badge">Sanctuary Interior</span>
+                <h3>Executive Lounge &amp; BMW Curved Display</h3>
+                <p>Hand-crafted fine-grain Merino leather and faceted crystal glass iDrive controller.</p>
+              </div>
+              <label for="lux-slide2" class="carousel-arrow gold-hover prev" title="Previous Slide">&#10094;</label>
+              <label for="lux-slide4" class="carousel-arrow gold-hover next" title="Next Slide">&#10095;</label>
+            </div>
+
+            <!-- Slide 4: Black Luxury Flagship Stance -->
+            <div class="carousel-item slide-4">
+              <img src="/images/bmw-luxury-slide4.jpg" alt="Black Luxury Flagship Stance">
+              <div class="carousel-overlay">
+                <span class="badge gold-badge">Whisper-Quiet Power</span>
+                <h3>Adaptive Two-Axle Air Suspension</h3>
+                <p>Automatic level control with predictive camera scanning of upcoming road surfaces.</p>
+              </div>
+              <label for="lux-slide3" class="carousel-arrow gold-hover prev" title="Previous Slide">&#10094;</label>
+              <label for="lux-slide1" class="carousel-arrow gold-hover next" title="Next Slide">&#10095;</label>
+            </div>
+
+          </div>
+
+          <!-- Bullet Dots for Direct Click Navigation -->
+          <div class="carousel-bullets">
+            <label for="lux-slide1" class="carousel-bullet bullet-1" title="Slide 1: 7 Series"></label>
+            <label for="lux-slide2" class="carousel-bullet bullet-2" title="Slide 2: 8 Series"></label>
+            <label for="lux-slide3" class="carousel-bullet bullet-3" title="Slide 3: Interior"></label>
+            <label for="lux-slide4" class="carousel-bullet bullet-4" title="Slide 4: Stance"></label>
+          </div>
+        </div>
+
+        <!-- 2-Column Article (PDF Requirement) -->
+        <article class="two-column-article">
+          <p>
+            The BMW Luxury Class stands as a profound testament to what is possible when state-of-the-art engineering
+            serves pure human comfort. Inside the flagship BMW 7 Series and i7, passengers enter a palatial private
+            sanctuary protected from the bustle of the outside world through acoustic lamination and active road-noise
+            cancellation.
+          </p>
+
+          <p>
+            Rear-seat occupants are treated to the groundbreaking 31.3-inch 8K BMW Theater Screen, extending down
+            smoothly from the ceiling lining. Equipped with Amazon Fire TV streaming, touch-screen door remotes, and
+            automated rear sunblinds, it transforms the cabin into an executive private cinema.
+          </p>
+
+          <p>
+            Under the hood, drivers may select either the velvet-smooth 4.4-liter TwinPower Turbo V8 with 48V
+            mild-hybrid assistance (delivering 536 horsepower in the 760i xDrive), or the whisper-silent dual-motor
+            all-electric powertrain of the i7, offering effortless acceleration with zero tailpipe emissions.
+          </p>
+
+          <p>
+            Handling remains poised and majestic thanks to two-axle adaptive air suspension with electronically
+            controlled dampers and Integral Active Steering (rear-wheel steering). The vehicle glides effortlessly over
+            tarmac imperfections, demonstrating that peerless luxury and genuine driving dynamism can coexist in
+            absolute harmony.
+          </p>
+        </article>
+
+        <!-- Technical Specifications Table in Text -->
+        <div id="lux-specs">
+          <h3 class="section-subtitle gold">BMW Luxury Flagship Technical Specifications</h3>
+          <table class="specs-table luxury-specs">
+            <thead>
+              <tr>
+                <th>Specification Category</th>
+                <th>Factory Specification Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Powertrain Architecture</strong></td>
+                <td>4.4L BMW TwinPower Turbo V8 (Mild-Hybrid) / Dual-Motor Electric (i7)</td>
+              </tr>
+              <tr>
+                <td><strong>Peak Power Output</strong></td>
+                <td>536 HP @ 5,500 &ndash; 6,000 RPM (760i xDrive)</td>
+              </tr>
+              <tr>
+                <td><strong>Peak Torque</strong></td>
+                <td>553 lb-ft (750 Nm) @ 1,800 &ndash; 5,400 RPM</td>
+              </tr>
+              <tr>
+                <td><strong>Acceleration (0 &ndash; 60 mph)</strong></td>
+                <td>4.1 seconds (760i xDrive) / 3.5 seconds (i7 M70)</td>
+              </tr>
+              <tr>
+                <td><strong>Suspension Technology</strong></td>
+                <td>Adaptive 2-Axle Air Suspension with Active Roll Comfort Stabilization</td>
+              </tr>
+              <tr>
+                <td><strong>Rear Executive Cinema</strong></td>
+                <td>31.3-Inch 8K Panoramic Theater Screen with 32:9 Ultrawide Ratio</td>
+              </tr>
+              <tr>
+                <td><strong>Audio System</strong></td>
+                <td>Bowers &amp; Wilkins Diamond Surround Sound &bull; 36 Speakers &bull; 1,965 Watts</td>
+              </tr>
+              <tr>
+                <td><strong>Steering &amp; Maneuverability</strong></td>
+                <td>Integral Active Steering (Rear-Wheel Steering up to 3.5 Degrees)</td>
+              </tr>
+              <tr>
+                <td><strong>Interior Upholstery</strong></td>
+                <td>Individual Merino Leather with Cashmere Wool Inlays &amp; Oak Wood Veneers</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Car Sound / Audio File Section (Required) -->
+        <div class="audio-card gold-card" id="lux-audio">
+          <h4>&#127911; BMW Luxury Acoustic Experience &amp; V8 Whisper</h4>
+          <p>
+            Listen to the refined, whisper-quiet idle of the 4.4L Twin-Turbo V8 engine paired with the Hans
+            Zimmer-composed BMW IconicSounds luxury welcome signature. Play directly or download the audio file:
+          </p>
+          <audio controls preload="none">
+            <source src="media/bmw-luxury-sound.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+          <p style="margin-top: 10px;">
+            <a href="media/bmw-luxury-sound.wav" class="btn-download gold" download>
+              Download Luxury Audio File (WAV) &darr;
+            </a>
+          </p>
+        </div>
+
+        <!-- PDF Specifications Section: First View PDF, Download Manually After (Required) -->
+        <div class="info-card gold-card" id="lux-pdf">
+          <h4>&#128196; BMW Luxury Class Technical Brochure (PDF)</h4>
+          <p>
+            Access the official factory specification document detailing executive lounge dimensions, acoustic decibel
+            ratings, safety assist features, paint palettes, and interior trim specifications.
+          </p>
+          <p style="font-size: 0.88rem; color: #94a3b8; margin-top: 6px;">
+            <em>You can first preview the PDF directly in your browser. If needed, you can download the document
+              manually to your device:</em>
+          </p>
+          <!-- Dual Action Buttons -->
+          <div class="pdf-actions">
+            <!-- 1. First View PDF in new tab -->
+            <a href="media/bmw-luxury-specifications.pdf" target="_blank" class="btn-view-pdf gold-btn">
+              &#128065; View Specification (PDF) &rarr;
+            </a>
+            <!-- 2. Manual Download Button if needed -->
+            <a href="media/bmw-luxury-specifications.pdf" download class="btn-download-pdf">
+              &#11015; Download PDF File
+            </a>
+          </div>
+        </div>
+
+        <!-- Additional Luxury Highlights -->
+        <div id="lux-lounge" style="margin-top: 24px;">
+          <h3 class="section-subtitle gold">The Art of Executive Travel</h3>
+          <img src="/images/bmw-luxury-slide3.jpg" alt="BMW Luxury Interior" class="img-float-right">
+          <p>
+            <strong>BMW Interaction Bar:</strong> A sculptured, backlit crystalline surface stretching across the entire
+            dashboard and into the door panels, housing touch-sensitive controls and dynamic mood animations.
+          </p>
+          <p>
+            <strong>Executive Lounge Seating:</strong> With a continuous leg rest behind the front passenger seat and a
+            recline angle up to 42.5 degrees, the rear compartment becomes a first-class sanctuary on wheels.
+          </p>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- Modern Footer with Gradient & Character Entities -->
+    <footer>
+      <div class="luxury-gold-bar" style="height: 3px; margin-bottom: 14px;"></div>
+      <p>&copy; 2026 Bayerische Motoren Werke AG &bull; BMW Luxury Class &bull; All Rights Reserved.</p>
+      <p>Developed with Pure HTML5 &amp; CSS3 (No JavaScript) &bull; <a href="../index.html">BMW Home</a> &bull; <a
+          href="performance.html">M Performance</a></p>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>

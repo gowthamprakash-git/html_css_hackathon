@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMW M4 Competition | Specifications, Carousel &amp; Sound</title>
+  <link rel="stylesheet" href="/styles/normalize.css">
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+
+  <!-- Centered Main Wrapper -->
+  <div id="wrapper">
+
+    <!-- BMW M Motorsport Signature Tri-Color Accent Line -->
+    <div class="m-tricolor-bar"></div>
+
+    <!-- Header Section with Title, Tagline, Brand Logo & Gradient -->
+    <header>
+      <div class="header-top">
+        <div class="header-branding">
+          <div class="header-logo-badge" title="BMW M Performance">
+            <img src="/images/bmw-logo.jpg" alt="BMW Roundel Logo">
+          </div>
+          <div class="header-text">
+            <h1>BMW <span class="m-letter">M</span> <span class="sub-title">PERFORMANCE</span></h1>
+            <p class="tagline">Engineered on the N&uuml;rburgring &bull; Born for Pure Driving Passion</p>
+          </div>
+        </div>
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+    </header>
+
+    <!-- Pure CSS Checkbox for Mobile Navigation (Zero JS) -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+
+    <!-- Horizontal Navigation Menu -->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+
+        <li><a href="/pages/performance.html">Performance Cars</a></li>
+
+        <li><a href="/pages/m4.html" class="active"> M4 Competition</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content Area: Content Page 2 Layout (Left Sidebar + Right Section) -->
+    <main class="content-area heritage-layout clearfix">
+
+      <!-- Sidebar: Left Column (Additional Resources, Audio Link, PDF Link) -->
+      <aside class="sidebar">
+        <h3 class="sidebar-title">M4 Resources &amp; Downloads</h3>
+
+        <ul class="sidebar-nav-links">
+          <li>
+            <a href="/media/bmw-m4-exhaust.wav" target="_blank" download>
+              &#127911; Download M4 Exhaust (WAV)
+            </a>
+          </li>
+          <li>
+            <a href="/media/bmw-m4-specifications.pdf" target="_blank">
+              &#128065; View M4 Spec Sheet (PDF)
+            </a>
+          </li>
+          <li><a href="index.html">&larr; Return to BMW Home</a></li>
+          <li><a href="/pages/performance.html">Performance Overview &rarr;</a></li>
+          <li><a href="/pages/luxury.html" class="gold-link">Switch to Luxury Cars Collection &rarr;</a></li>
+          <li><a href="/pages/m2.html">1. View BMW M2 Coupe Specs &rarr;</a></li>
+        </ul>
+
+        <h3 class="sidebar-title">Quick Gallery Links</h3>
+        <ul class="sidebar-nav-links">
+          <li><a href="#m4-carousel">M4 Competition Carousel</a></li>
+          <li><a href="#m4-specs">Technical Specs Table</a></li>
+          <li><a href="#m4-audio">&#127911; Listen to M4 Engine Sound</a></li>
+          <li><a href="#m4-pdf">&#128196; View &amp; Download PDF</a></li>
+        </ul>
+
+        <!-- Sidebar Downloadable PDF Card -->
+        <div class="sidebar-box">
+          <h4>&#128196; Factory Specification PDF</h4>
+          <p>
+            Official engineering brochure with curb weights, gear ratios, track widths, and aerodynamic downforce maps.
+          </p>
+          <a href="/media/bmw-m4-specifications.pdf" class="btn-download" target="_blank">
+            &#128065; View PDF in Browser &rarr;
+          </a>
+        </div>
+
+        <!-- Sidebar Audio Tour Card -->
+        <div class="sidebar-box">
+          <h4>&#127911; M Exhaust Audio</h4>
+          <p>
+            Hear the roaring twin-turbo inline-six with active M sport exhaust flaps open at full throttle.
+          </p>
+          <a href="/media/bmw-m4-exhaust.wav" class="btn-download" target="_blank" download>
+            Download Sound Clip &darr;
+          </a>
+        </div>
+      </aside>
+
+      <!-- Main Section: Right Column (Carousel, Specs Table, Audio & Content) -->
+      <section class="main-section">
+        <span class="model-badge">Track Dominance</span>
+        <h2 class="page-title">BMW M4 Competition: <span class="m-highlight">Supreme Dynamics</span></h2>
+
+        <p class="lead-text">
+          The BMW M4 Competition Coupe represents the absolute pinnacle of high-performance touring sports cars. Below
+          is an interactive photo showcase highlighting the M4's track stance, aerodynamic splitters, profile, and quad
+          exhaust diffusers.
+        </p>
+
+        <!-- =================================================================
+             PURE CSS CAROUSEL (ZERO JAVASCRIPT)
+             4 Correct BMW M4 Competition Images with Radio Buttons, Arrows & Bullets
+             ================================================================= -->
+        <div class="css-carousel-wrapper" id="m4-carousel">
+          <!-- 4 Radio Buttons controlling 4 Slides -->
+          <input type="radio" name="m4-slide" id="m4-slide1" checked>
+          <input type="radio" name="m4-slide" id="m4-slide2">
+          <input type="radio" name="m4-slide" id="m4-slide3">
+          <input type="radio" name="m4-slide" id="m4-slide4">
+
+          <!-- Carousel Viewport -->
+          <div class="carousel-viewport">
+
+            <!-- Slide 1: Front Track Stance (User's Verified Correct First Image) -->
+            <div class="carousel-item slide-1">
+              <img src="/images/bmw-m4-slide1.jpg" alt="BMW M4 Competition Coupe Stance">
+              <div class="carousel-overlay">
+                <span class="badge">Track Stance</span>
+                <h3>BMW M4 Competition &ndash; Aerodynamic Profile</h3>
+                <p>Frameless vertical kidney grilles and sculpted bonnet power domes in S&atilde;o Paulo Yellow.</p>
+              </div>
+              <label for="m4-slide4" class="carousel-arrow prev" title="Previous Slide">&#10094;</label>
+              <label for="m4-slide2" class="carousel-arrow next" title="Next Slide">&#10095;</label>
+            </div>
+
+            <!-- Slide 2: High Speed Track Performance Action -->
+            <div class="carousel-item slide-2">
+              <img src="/images/bmw-m4-slide2.jpg" alt="BMW M4 G82 Driving Performance">
+              <div class="carousel-overlay">
+                <span class="badge">503 Horsepower</span>
+                <h3>M xDrive All-Wheel Drive Precision</h3>
+                <p>Instantaneous torque vectoring with pure rear-wheel-drive 2WD mode.</p>
+              </div>
+              <label for="m4-slide1" class="carousel-arrow prev" title="Previous Slide">&#10094;</label>
+              <label for="m4-slide3" class="carousel-arrow next" title="Next Slide">&#10095;</label>
+            </div>
+
+            <!-- Slide 3: Isle of Man Green Luxury Coupe Profile -->
+            <div class="carousel-item slide-3">
+              <img src="/images/bmw-m4-slide3.jpg" alt="BMW M4 Competition Green Coupe">
+              <div class="carousel-overlay">
+                <span class="badge">Motorsport Design</span>
+                <h3>Carbon Fiber Aero Mirrors &amp; Contours</h3>
+                <p>Aggressive side skirts and aerodynamic double-bubble carbon fiber roof.</p>
+              </div>
+              <label for="m4-slide2" class="carousel-arrow prev" title="Previous Slide">&#10094;</label>
+              <label for="m4-slide4" class="carousel-arrow next" title="Next Slide">&#10095;</label>
+            </div>
+
+            <!-- Slide 4: Rear Exhaust Diffuser & Taillights -->
+            <div class="carousel-item slide-4">
+              <img src="/images/bmw-m4-slide4.jpg" alt="BMW M4 Rear Quad Exhaust Diffuser">
+              <div class="carousel-overlay">
+                <span class="badge">Acoustic Signature</span>
+                <h3>Dual Twin 100mm Quad Exhaust Tips</h3>
+                <p>Electronically controlled exhaust valves generating signature M burble.</p>
+              </div>
+              <label for="m4-slide3" class="carousel-arrow prev" title="Previous Slide">&#10094;</label>
+              <label for="m4-slide1" class="carousel-arrow next" title="Next Slide">&#10095;</label>
+            </div>
+
+          </div>
+
+          <!-- Bullet Dots for Direct Click Navigation -->
+          <div class="carousel-bullets">
+            <label for="m4-slide1" class="carousel-bullet bullet-1" title="Slide 1: Exterior Front"></label>
+            <label for="m4-slide2" class="carousel-bullet bullet-2" title="Slide 2: Track Driving"></label>
+            <label for="m4-slide3" class="carousel-bullet bullet-3" title="Slide 3: Side Profile"></label>
+            <label for="m4-slide4" class="carousel-bullet bullet-4" title="Slide 4: Rear Exhaust"></label>
+          </div>
+        </div>
+
+        <!-- Technical Specifications Table in Text (Required) -->
+        <div id="m4-specs">
+          <h3 class="section-subtitle">BMW M4 Competition Technical Specifications</h3>
+          <table class="specs-table">
+            <thead>
+              <tr>
+                <th>Specification Category</th>
+                <th>Factory Specification Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Engine Architecture</strong></td>
+                <td>3.0L BMW S58 High-Performance M TwinPower Turbo Inline-6</td>
+              </tr>
+              <tr>
+                <td><strong>Peak Power Output</strong></td>
+                <td>503 HP (375 kW) @ 6,250 RPM</td>
+              </tr>
+              <tr>
+                <td><strong>Peak Torque</strong></td>
+                <td>479 lb-ft (650 Nm) @ 2,750 &ndash; 5,500 RPM</td>
+              </tr>
+              <tr>
+                <td><strong>Acceleration (0 &ndash; 60 mph)</strong></td>
+                <td>3.4 seconds (M xDrive) / 3.8 seconds (RWD)</td>
+              </tr>
+              <tr>
+                <td><strong>Top Track Speed</strong></td>
+                <td>180 mph (290 km/h) electronically limited with M Driver's Package</td>
+              </tr>
+              <tr>
+                <td><strong>Transmission</strong></td>
+                <td>8-Speed M Steptronic with Drivelogic &amp; Steering Wheel Shift Paddles</td>
+              </tr>
+              <tr>
+                <td><strong>Drivetrain System</strong></td>
+                <td>M xDrive Intelligent All-Wheel-Drive with 4WD, 4WD Sport, &amp; 2WD modes</td>
+              </tr>
+              <tr>
+                <td><strong>Braking Package</strong></td>
+                <td>Optional M Carbon Ceramic Brakes (400mm front discs / gold calipers)</td>
+              </tr>
+              <tr>
+                <td><strong>Curb Weight</strong></td>
+                <td>3,979 lbs (1,805 kg) with 50.6% / 49.4% front-to-rear distribution</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Car Sound / Exhaust Audio File Section (Required) -->
+        <div class="audio-card" id="m4-audio">
+          <h4>&#127911; BMW M4 Competition Exhaust Note (Car Sound)</h4>
+          <p>
+            Listen to the aggressive engine roar of the S58 inline-six with M Sport twin exhaust valves open during
+            full-throttle acceleration. Play directly or download the audio file:
+          </p>
+          <audio controls preload="none">
+            <source src="/media/bmw-m4-exhaust.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+          <p style="margin-top: 10px;">
+            <a href="/media/bmw-m4-exhaust.wav" class="btn-download" download>
+              Download M4 Sound Clip (WAV) &darr;
+            </a>
+          </p>
+        </div>
+
+        <!-- PDF Specifications Section: First View PDF, Download Manually After (Required) -->
+        <div class="info-card" id="m4-pdf">
+          <h4>&#128196; BMW M4 Technical Specification Brochure (PDF)</h4>
+          <p>
+            Access the complete factory technical manual featuring engine dynamometer torque curves, gear reduction
+            ratios, aerodynamic drag ratings, and suspension tuning parameters.
+          </p>
+          <p style="font-size: 0.88rem; color: #94a3b8; margin-top: 6px;">
+            <em>You can first preview the PDF directly in your browser. If needed, you can download the document
+              manually to your device:</em>
+          </p>
+          <!-- Dual Action Buttons -->
+          <div class="pdf-actions">
+            <!-- 1. First View PDF in new tab -->
+            <a href="/media/bmw-m4-specifications.pdf" target="_blank" class="btn-view-pdf">
+              &#128065; View Specification (PDF) &rarr;
+            </a>
+            <!-- 2. Manual Download Button if needed -->
+            <a href="/media/bmw-m4-specifications.pdf" download class="btn-download-pdf">
+              &#11015; Download PDF File
+            </a>
+          </div>
+        </div>
+
+        <!-- Detailed Engineering Overview -->
+        <h3 class="section-subtitle">Chassis &amp; Drivetrain Engineering</h3>
+        <p>
+          The M xDrive all-wheel-drive system in the BMW M4 Competition employs an electronically controlled multi-plate
+          clutch in the transfer case to ensure fully variable, seamless distribution of torque between the front and
+          rear axles. In default <strong>4WD</strong> mode, the system maintains optimum traction without sacrificing
+          rear-bias agility.
+        </p>
+
+        <p>
+          Switching to <strong>4WD Sport</strong> transmits an even greater proportion of torque to the rear wheels
+          during racetrack maneuvers, permitting controlled, safe power slides. For purists seeking absolute mechanical
+          connection, selecting <strong>2WD</strong> completely disengages the front drive axle and deactivates
+          stability control, unleashing pure rear-wheel-drive drifts.
+        </p>
+
+      </section>
+
+    </main>
+
+    <!-- Modern Footer with Gradient & Character Entities -->
+    <footer>
+      <div class="m-tricolor-bar" style="height: 3px; margin-bottom: 14px;"></div>
+      <p>&copy; 2026 Bayerische Motoren Werke AG &bull; BMW M GmbH &bull; All Rights Reserved.</p>
+      <p>Developed with Pure HTML5 &amp; CSS3 (No JavaScript) &bull; Model Exam Project &bull; <a href="m2.html">Switch
+          to M2 Coupe &rarr;</a></p>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>

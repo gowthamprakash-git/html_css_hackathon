@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMW M2 Coupe | Specifications, Carousel &amp; Sound</title>
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+
+  <!-- Centered Main Wrapper -->
+  <div id="wrapper">
+
+    <!-- BMW M Motorsport Signature Tri-Color Accent Line -->
+    <div class="m-tricolor-bar"></div>
+
+    <!-- Header Section with Title, Tagline, Brand Logo & Gradient -->
+    <header>
+      <div class="header-top">
+        <div class="header-branding">
+          <div class="header-logo-badge" title="BMW M Performance">
+            <img src="/images/bmw-logo.jpg" alt="BMW Roundel Logo">
+          </div>
+          <div class="header-text">
+            <h1>BMW <span class="m-letter">M</span> <span class="sub-title">PERFORMANCE</span></h1>
+            <p class="tagline">Engineered on the N&uuml;rburgring &bull; Born for Pure Driving Passion</p>
+          </div>
+        </div>
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+    </header>
+
+    <!-- Pure CSS Checkbox for Mobile Navigation (Zero JS) -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+
+    <!-- Horizontal Navigation Menu -->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="/pages/performance.html">Performance Cars</a></li>
+        <li><a href="/pages/m2.html" class="active"> BMW M2 Coupe</a></li>
+
+      </ul>
+    </nav>
+
+    <!-- Main Content Area: Content Page 1 Layout (Left Sidebar + Right Section) -->
+    <main class="content-area left-sidebar-layout clearfix">
+
+      <!-- Sidebar: Left Column (Thumbnail Image Links & Quick Navigation) -->
+      <aside class="sidebar">
+        <h3 class="sidebar-title">M2 Features &amp; Gallery</h3>
+
+        <!-- List with Image Links (as required by specifications) -->
+        <ul class="image-link-list">
+          <li>
+            <a href="#m2-carousel" class="thumb-card">
+              <img src="/images/bmw-m2-slide1.jpg" alt="BMW M2 Coupe Stance" class="thumb-photo">
+              <div class="thumb-info">
+                <strong>BMW M2 Exterior</strong>
+                <span>Compact Widebody Design</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#m2-specs" class="thumb-card">
+              <img src="/images/bmw-m2-slide2.jpg" alt="BMW M2 Performance" class="thumb-photo">
+              <div class="thumb-info">
+                <strong>S58 Inline-6 Motor</strong>
+                <span>453 HP &bull; 406 lb-ft Torque</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#m2-audio" class="thumb-card">
+              <img src="/images/bmw-m2-slide3.jpg" alt="BMW M2 Track Edition" class="thumb-photo">
+              <div class="thumb-info">
+                <strong>M Sport Exhaust</strong>
+                <span>Quad Tailpipes &bull; Audio</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="/pages/m4.html" class="thumb-card">
+              <img src="/images/bmw-m4-slide1.jpg" alt="BMW M4 Competition" class="thumb-photo">
+              <div class="thumb-info">
+                <strong>M4 Competition Coupe</strong>
+                <span>503 HP &bull; View Model &rarr;</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Navigation Links including Return to Home Link -->
+        <h3 class="sidebar-title">Model Quick Links</h3>
+        <ul class="sidebar-nav-links">
+          <li><a href="index.html">&larr; Return to BMW Home</a></li>
+          <li><a href="performance.html">Performance Overview &rarr;</a></li>
+          <li><a href="luxury.html" class="gold-link">Switch to Luxury Cars Collection &rarr;</a></li>
+          <li><a href="m4.html">2. View M4 Competition Coupe &rarr;</a></li>
+          <li><a href="#m2-carousel">M2 Photo Carousel</a></li>
+          <li><a href="#m2-specs">Full Technical Specs Table</a></li>
+          <li><a href="#m2-audio">&#127911; Listen to M2 Exhaust Sound</a></li>
+          <li><a href="#m2-pdf">&#128196; View &amp; Download PDF</a></li>
+        </ul>
+
+        <!-- Sidebar Resource Box -->
+        <div class="sidebar-box">
+          <h4>Driver Feedback</h4>
+          <p>
+            <em>"The G87 M2 feels like an authentic purebred mechanical weapon. Compact, rear-wheel drive, and ready to
+              dance at the throttle."</em>
+          </p>
+          <p style="color: #38bdf8; font-size: 0.82rem; margin-top: 6px;">
+            &mdash; BMW M Test Driver, N&uuml;rburgring
+          </p>
+        </div>
+      </aside>
+
+      <!-- Main Section: Right Column (Carousel, 2-Column Article, Specs Table, Audio & PDF) -->
+      <section class="main-section">
+        <span class="model-badge">Model Specifications</span>
+        <h2 class="page-title">BMW M2 Coupe: <span class="m-highlight">Pure Performance Distilled</span></h2>
+
+        <p class="lead-text">
+          The BMW M2 Coupe is engineered for purists who demand an immediate connection with the tarmac. Explore the
+          4-slide high-definition visual carousel below showcasing the M2's muscular widebody, aerodynamics, and track
+          stance.
+        </p>
+
+        <!-- =================================================================
+             BMW M2 PURE CSS CAROUSEL (ZERO JAVASCRIPT)
+             4 Verified BMW M2 Photos with Radio Buttons, Arrows & Bullet Dots
+             ================================================================= -->
+        <div class="css-carousel-wrapper" id="m2-carousel">
+          <!-- 4 Radio Buttons controlling 4 M2 Slides -->
+          <input type="radio" name="m2-slide" id="m2-slide1" checked>
+          <input type="radio" name="m2-slide" id="m2-slide2">
+          <input type="radio" name="m2-slide" id="m2-slide3">
+          <input type="radio" name="m2-slide" id="m2-slide4">
+
+          <!-- Carousel Viewport -->
+          <div class="carousel-viewport">
+
+            <!-- Slide 1: Front 3/4 View in Signature Blue -->
+            <div class="carousel-item slide-1">
+              <img src="/images/bmw-m2-slide1.jpg" alt="BMW M2 Coupe Front View">
+              <div class="carousel-overlay">
+                <span class="badge">Compact Purity</span>
+                <h3>BMW M2 Coupe &ndash; Athletic Stance</h3>
+                <p>Frameless square kidney air intakes and muscular sculpted bonnet contours.</p>
+              </div>
+              <label for="m2-slide4" class="carousel-arrow prev" title="Previous Slide">&#10094;</label>
+              <label for="m2-slide2" class="carousel-arrow next" title="Next Slide">&#10095;</label>
+            </div>
+
+            <!-- Slide 2: Highway & Track Stance at Speed -->
+            <div class="carousel-item slide-2">
+              <img src="/images/bmw-m2-slide2.jpg" alt="BMW M2 Coupe High Speed Stance">
+              <div class="carousel-overlay">
+                <span class="badge">453 Horsepower</span>
+                <h3>Rear-Wheel-Drive Dynamic Precision</h3>
+                <p>Shortened wheelbase with near-perfect 50:50 front-to-rear axle weight balance.</p>
+              </div>
+              <label for="m2-slide1" class="carousel-arrow prev" title="Previous Slide">&#10094;</label>
+              <label for="m2-slide3" class="carousel-arrow next" title="Next Slide">&#10095;</label>
+            </div>
+
+            <!-- Slide 3: Track Edition Widebody -->
+            <div class="carousel-item slide-3">
+              <img src="/images/bmw-m2-slide3.jpg" alt="BMW M2 Track Edition Widebody">
+              <div class="carousel-overlay">
+                <span class="badge">Motorsport Aerodynamics</span>
+                <h3>Flared Fenders &amp; Aerodynamic Air Curtains</h3>
+                <p>Functional wheel arch vents channeling airflow directly over cooling radiators.</p>
+              </div>
+              <label for="m2-slide2" class="carousel-arrow prev" title="Previous Slide">&#10094;</label>
+              <label for="m2-slide4" class="carousel-arrow next" title="Next Slide">&#10095;</label>
+            </div>
+
+            <!-- Slide 4: Silver Metallic Stance Profile -->
+            <div class="carousel-item slide-4">
+              <img src="/images/bmw-m2-slide4.jpg" alt="BMW M2 Silver Metallic Stance">
+              <div class="carousel-overlay">
+                <span class="badge">Carbon Fiber Roof</span>
+                <h3>Lightweight CFRP Construction</h3>
+                <p>Carbon fiber composite roof lowers center of gravity for maximum agility.</p>
+              </div>
+              <label for="m2-slide3" class="carousel-arrow prev" title="Previous Slide">&#10094;</label>
+              <label for="m2-slide1" class="carousel-arrow next" title="Next Slide">&#10095;</label>
+            </div>
+
+          </div>
+
+          <!-- Bullet Dots for Direct Click Navigation -->
+          <div class="carousel-bullets">
+            <label for="m2-slide1" class="carousel-bullet bullet-1" title="Slide 1: Front Stance"></label>
+            <label for="m2-slide2" class="carousel-bullet bullet-2" title="Slide 2: Highway Speed"></label>
+            <label for="m2-slide3" class="carousel-bullet bullet-3" title="Slide 3: Widebody"></label>
+            <label for="m2-slide4" class="carousel-bullet bullet-4" title="Slide 4: Carbon Roof"></label>
+          </div>
+        </div>
+
+        <!-- 2-Column Article (Desktop and Tablet Only) -->
+        <article class="two-column-article">
+          <p>
+            The BMW M2 Coupe is engineered for purists who demand immediate connection with tarmac. Built with a compact
+            wheelbase, aggressively flared wheel arches, and near-perfect 50:50 axle weight balance, the G87 M2 delivers
+            razor-sharp front-end precision and playful rear-axle adjustability.
+          </p>
+
+          <p>
+            At its core sits the legendary 3.0-liter BMW M S58 twin-turbocharged inline-six motor &mdash; the very same
+            powerplant engineered for its larger M3 and M4 siblings. Tuned to 453 horsepower and 406 lb-ft of torque,
+            this high-revving powerhouse revs eagerly to a thrilling 7,200 RPM redline.
+          </p>
+
+          <p>
+            Enthusiasts can choose between a purist 6-speed manual gearbox with automatic rev-matching for total analog
+            control, or the lightning-fast 8-speed M Steptronic transmission with Drivelogic. Power is routed
+            exclusively through an Active M Differential on the rear axle for maximum exit traction.
+          </p>
+
+          <p>
+            Inside, lightweight M Carbon bucket seats save 24 pounds of weight, locking driver and passenger securely
+            during high-G lateral cornering. The curved digital display features dedicated M Mode displays, tire
+            temperature telemetry, and a 10-stage drift analyzer.
+          </p>
+        </article>
+
+        <!-- Technical Specifications Table in Text -->
+        <div id="m2-specs">
+          <h3 class="section-subtitle">BMW M2 Comprehensive Technical Specifications</h3>
+          <table class="specs-table">
+            <thead>
+              <tr>
+                <th>Specification Category</th>
+                <th>Factory Specification Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Engine Architecture</strong></td>
+                <td>3.0L BMW S58 M TwinPower Turbo Inline-6 Cylinder</td>
+              </tr>
+              <tr>
+                <td><strong>Peak Power Output</strong></td>
+                <td>453 HP @ 6,250 RPM</td>
+              </tr>
+              <tr>
+                <td><strong>Peak Torque</strong></td>
+                <td>406 lb-ft (550 Nm) @ 2,650 &ndash; 5,870 RPM</td>
+              </tr>
+              <tr>
+                <td><strong>Acceleration (0 &ndash; 60 mph)</strong></td>
+                <td>3.9 seconds (M Steptronic) / 4.1 seconds (Manual)</td>
+              </tr>
+              <tr>
+                <td><strong>Top Track Speed</strong></td>
+                <td>177 mph (285 km/h) with M Driver's Package</td>
+              </tr>
+              <tr>
+                <td><strong>Transmission Options</strong></td>
+                <td>6-Speed Manual or 8-Speed M Steptronic with Drivelogic</td>
+              </tr>
+              <tr>
+                <td><strong>Drivetrain Layout</strong></td>
+                <td>Rear-Wheel Drive (RWD) with Active M Differential</td>
+              </tr>
+              <tr>
+                <td><strong>Curb Weight &amp; Distribution</strong></td>
+                <td>3,814 lbs (1,730 kg) &bull; 50.2% Front / 49.8% Rear</td>
+              </tr>
+              <tr>
+                <td><strong>Braking System</strong></td>
+                <td>6-Piston Fixed Front Calipers with 380mm Vented Discs</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Car Sound / Exhaust Audio File Section (Required) -->
+        <div class="audio-card" id="m2-audio">
+          <h4>&#127911; BMW M2 Engine &amp; Exhaust Sound</h4>
+          <p>
+            Experience the thrilling acoustic signature of the BMW S58 twin-turbocharged inline-six engine with quad
+            sport exhaust valves open. Listen below or save the audio file:
+          </p>
+          <audio controls preload="none">
+            <source src="/media/bmw-m2-exhaust.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+          <p style="margin-top: 10px;">
+            <a href="/media/bmw-m2-exhaust.wav" class="btn-download" download>
+              Download M2 Sound Clip (WAV) &darr;
+            </a>
+          </p>
+        </div>
+
+        <!-- PDF Specifications Section: First View PDF, Download Manually After (Required) -->
+        <div class="info-card" id="m2-pdf">
+          <h4>&#128196; BMW M2 Technical Specification Brochure (PDF)</h4>
+          <p>
+            Review the official factory datasheet including chassis dimensions, gear ratio tables, aerodynamic drag
+            coefficients, standard safety equipment, and paint finish options.
+          </p>
+          <p style="font-size: 0.88rem; color: #94a3b8; margin-top: 6px;">
+            <em>You can first preview the PDF directly in your browser. If needed, you can download the document
+              manually to your device:</em>
+          </p>
+          <!-- Dual Action Buttons -->
+          <div class="pdf-actions">
+            <!-- 1. First View PDF in new tab -->
+            <a href="/media/bmw-m2-specifications.pdf" target="_blank" class="btn-view-pdf">
+              &#128065; View Specification (PDF) &rarr;
+            </a>
+            <!-- 2. Manual Download Button if needed -->
+            <a href="/media/bmw-m2-specifications.pdf" download class="btn-download-pdf">
+              &#11015; Download PDF File
+            </a>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- Modern Footer with Gradient & Character Entities -->
+    <footer>
+      <div class="m-tricolor-bar" style="height: 3px; margin-bottom: 14px;"></div>
+      <p>&copy; 2026 Bayerische Motoren Werke AG &bull; BMW M GmbH &bull; All Rights Reserved.</p>
+      <p>Developed with Pure HTML5 &amp; CSS3 (No JavaScript) &bull; Model Exam Project &bull; <a href="m4.html">Switch
+          to M4 Competition &rarr;</a></p>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
